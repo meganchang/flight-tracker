@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	h1= title
+	form(name="form-search-oneway", action="/search", method="post")
+		div.input
+			span.label Origin
+			input(type="text", name="origin")
+		div.input
+			span.label Destination
+			input(type="text", name="destination")
+		div.input
+			span.label Date (YYYY-MM-DD)
+			input(type="text", name="date")
+		div.actions
+			input(type="submit", value="Search")
